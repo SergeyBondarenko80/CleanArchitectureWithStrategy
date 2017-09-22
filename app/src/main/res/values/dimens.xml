@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="action_bar_text_size">22</integer>
+    <integer name="toast_text_size">16</integer>
+    <dimen name="marginStart">15dp</dimen>
+    <dimen name="marginEnd">15dp</dimen>
+</resources>

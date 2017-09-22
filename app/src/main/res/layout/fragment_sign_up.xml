@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:fillViewport="true"
+  android:orientation="vertical">
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+      android:layout_width="110dp"
+      android:layout_height="110dp"
+      android:layout_marginTop="20dp"
+      android:layout_gravity="center"
+      android:src="@mipmap/ic_logo" />
+
+    <TextView
+      android:id="@+id/tvSignUp"
+      android:textStyle="bold"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="10dp"
+      android:gravity="center"
+      android:text="@string/sign_up"
+      android:textColor="@color/deep_purple"
+      android:textSize="24sp" />
+
+    <LinearLayout
+      android:id="@+id/llAlreadyHaveAccount"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="15dp"
+      android:layout_marginBottom="15dp"
+      android:layout_gravity="center"
+      android:clickable="true"
+      android:gravity="center"
+      android:orientation="horizontal">
+
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:text="@string/already_have_an_account_ask"
+        android:textColor="@color/deep_purple"
+        android:textSize="17sp" />
+
+      <TextView
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:background="@android:color/transparent"
+        android:clickable="false"
+        android:text="@string/sign_in"
+        android:textColor="@color/deep_purple"
+        android:textSize="17sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+
+      <TextView
+        android:id="@+id/tvEmailValidSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginStart="@dimen/marginStart"
+        android:layout_marginEnd="@dimen/marginEnd"
+        android:textColor="@color/red_error"
+        android:textSize="14sp" />
+
+      <EditText
+        android:id="@+id/etEmailSignUp"
+        style="@style/MyEditText"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="@dimen/marginStart"
+        android:layout_marginEnd="@dimen/marginEnd"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:gravity="center_vertical|start"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/deep_purple"
+        android:textSize="18sp" />
+
+      <TextView
+        android:id="@+id/tvPasswordValidSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginStart="@dimen/marginStart"
+        android:layout_marginEnd="@dimen/marginEnd"
+        android:textColor="@color/red_error"
+        android:textSize="14sp" />
+
+      <EditText
+        android:id="@+id/etPasswordSignUp"
+        style="@style/MyEditText"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="@dimen/marginStart"
+        android:layout_marginEnd="@dimen/marginEnd"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:gravity="center_vertical|start"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:textColor="@color/deep_purple"
+        android:textSize="18sp" />
+
+      <TextView
+        android:id="@+id/tvConfirmPasswordValidSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginStart="@dimen/marginStart"
+        android:layout_marginEnd="@dimen/marginEnd"
+        android:textColor="@color/red_error"
+        android:textSize="14sp" />
+
+      <EditText
+        android:id="@+id/etConfirmPasswordSignUp"
+        style="@style/MyEditText"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="@dimen/marginStart"
+        android:layout_marginEnd="@dimen/marginEnd"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:gravity="center_vertical|start"
+        android:hint="@string/confirm_password"
+        android:inputType="textPassword"
+        android:textColor="@color/deep_purple"
+        android:textSize="18sp" />
+
+      <TextView
+        android:id="@+id/tvNameValidSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginStart="@dimen/marginStart"
+        android:layout_marginEnd="@dimen/marginEnd"
+        android:textColor="@color/red_error"
+        android:textSize="14sp" />
+
+      <EditText
+        android:id="@+id/etNameSignUp"
+        style="@style/MyEditText"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="@dimen/marginStart"
+        android:layout_marginEnd="@dimen/marginEnd"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:gravity="center_vertical|start"
+        android:hint="@string/name"
+        android:inputType="text"
+        android:textColor="@color/deep_purple"
+        android:textSize="18sp" />
+
+
+      <TextView
+        android:id="@+id/tvPhoneValidSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginStart="@dimen/marginStart"
+        android:layout_marginEnd="@dimen/marginEnd"
+        android:textColor="@color/red_error"
+        android:textSize="14sp" />
+
+      <LinearLayout
+        android:id="@+id/llPhoneNumberSignUp"
+        style="@style/MyEditText"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="@dimen/marginStart"
+        android:layout_marginEnd="@dimen/marginEnd"
+        android:clickable="false">
+
+        <com.hbb20.CountryCodePicker
+          android:id="@+id/countryCodePicker"
+          android:layout_width="wrap_content"
+          android:layout_height="60dp"
+          android:layout_marginStart="8dp"
+          android:gravity="center"
+          app:ccp_contentColor="@color/deep_purple"
+          app:ccp_textSize="18sp" />
+
+        <EditText
+          android:id="@+id/etPhoneNumberSignUp"
+          style="@style/MyEditText"
+          android:layout_width="match_parent"
+          android:layout_height="60dp"
+          android:paddingStart="20dp"
+          android:paddingEnd="20dp"
+          android:background="@drawable/edit_text_background_not_rounded"
+          android:gravity="center_vertical|start"
+          android:hint="@string/phone_number"
+          android:inputType="phone"
+          android:textColor="@color/deep_purple"
+          android:textSize="18sp" />
+
+      </LinearLayout>
+
+      <Button
+        android:id="@+id/btnSignUp"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="@dimen/marginStart"
+        android:layout_marginEnd="@dimen/marginEnd"
+        android:background="@drawable/background_button"
+        android:gravity="center"
+        android:text="@string/sign_up"
+        android:textAllCaps="true"
+        android:textColor="@color/deep_purple"
+        android:textSize="18sp" />
+
+    </LinearLayout>
+
+  </LinearLayout>
+
+</ScrollView>
